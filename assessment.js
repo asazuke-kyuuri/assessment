@@ -58,7 +58,7 @@ const answers=[
     '{userName}のいいところは好奇心です。新しいことに向かっていく{userName}の心構えが多くの人に魅力的に映ります。',
     '{userName}のいいところは気配りです。{userName}の配慮が多くの人を救っています。',
     '{userName}のいいところはその全てです。ありのままの{userName}自身がいいところなのです。',
-    '{userName}のいいところは自制心です。やばいと思ったときにしっかりと衝動を抑えられる{userName}が皆から評価されています。',
+    '{userName}のいいところは自制心です。まずいと思ったときにしっかりと衝動を抑えられる{userName}が皆から評価されています。',
     '{userName}のいいところは優しさです。{userName}の優しい雰囲気や立ち振る舞いに多くの人が癒やされています。'
 ];
 /**
@@ -78,9 +78,3 @@ function assessment(userName){
     result=result.replaceAll('{userName}',userName);//resultの{userName}部分を全てuserNameに置き換えてresultに再代入する関数　replaceAll
     return result;
 }
-//テストコード
-console.assert(
-    //テストをする関数　console.assert
-    assessment('太郎')===assessment('太郎'),//true
-    'どっか間違えてる'//false
-);
